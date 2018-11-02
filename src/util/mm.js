@@ -2,7 +2,7 @@
 
 var Hogan = require('hogan.js');
 var conf = {
-    serverHost : ""
+    serverHost : ''
 };
 var _mm = {
     request : function (param) {
@@ -10,11 +10,11 @@ var _mm = {
         $.ajax({
             type : param.method || "get",
             url : param.url || "",
-            dataType : param.type() || "json",
+            dataType : param.type || "json",
             data : param.data || "",
             success : function (res) {
                 // 请求成功
-                if (o === res.status) {
+                if (0 === res.status) {
                     typeof param.success === 'function' && param.success(res.data, res.msg);
                 }
                 // 没有登录,需要强制登录
@@ -73,7 +73,7 @@ var _mm = {
     },
     // 统一登录处理
     doLogin : function () {
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     }
 };
 
