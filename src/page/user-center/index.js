@@ -21,6 +21,7 @@ var page = {
         // 加载用户信息
         this.loadUserInfo();
     },
+    // 加载用户信息
     loadUserInfo : function () {
         var userHtml = '';
         _user.getUserInfo(function (res) {
