@@ -92,6 +92,6 @@ var _cart = {
             success : resolve,
             error   : reject
         });
-    },
-}
+    }
+};
 module.exports = _cart;
