@@ -8,7 +8,6 @@ var _product = {
         _mm.request({
             url     : _mm.getServerUrl('/product/list.do'),
             data    : listParam,
-            method  : 'POST',
             success : resolve,
             error   : reject
         });
@@ -20,7 +19,6 @@ var _product = {
             data    : {
                 productId : productId
             },
-            method  : 'POST',
             success : resolve,
             error   : reject
         });
