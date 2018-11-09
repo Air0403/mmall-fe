@@ -115,5 +115,5 @@ var _user = {
             error   : reject
         });
     }
-}
+};
 module.exports = _user;

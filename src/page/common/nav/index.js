@@ -33,7 +33,7 @@ var nav = {
     },
     // 加载用户信息
     loadUserInfo : function () {
-        _user.getUserInfo(function (res) {
+        _user.checkLogin(function (res) {
             $('.user.not-login').hide().siblings('.user.login').show()
                 .find('.username').text(res.username);
         }, function (errMsg) {
