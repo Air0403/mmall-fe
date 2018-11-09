@@ -4,7 +4,6 @@ require('./index.css');
 require('page/common/nav/index');
 require('page/common/header/index');
 require('util/slider/index');
-var navSide = require('page/common/nav-side/index');
 var tempBanner = require('./banner.string');
 var _mm = require('util/mm.js');
 
