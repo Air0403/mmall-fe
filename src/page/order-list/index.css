@@ -6,11 +6,11 @@
 }
 .order-list-table .cell {
     padding: 10px 0;
-    color: #fafafa;
+    color: #666;
     border-bottom: 1px solid #eee;
 }
 .order-list-table.header {
-    background: #666;
+    background: #ddd;
 }
 
 .order-list-table .order-info {
