@@ -40,7 +40,7 @@ var config = {
     },
     output: {
         path: __dirname + '/dist/',
-        publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.lovetao.ml/mmall-fe/dist/',
+        publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.lovetao.club/mmall-fe/dist/',
         filename: 'js/[name].js'
     },
     externals : {
